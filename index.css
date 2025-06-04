@@ -1,0 +1,504 @@
+ .u-section-1 {
+  min-height: 476px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 50%;
+  height: 100%;
+  left: auto;
+  right: 0;
+}
+
+.u-section-1 .u-image-2 {
+  width: 50%;
+  left: 0;
+  height: 100%;
+  right: auto;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-image-1 {
+    height: auto;
+  }
+
+  .u-section-1 .u-image-2 {
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+   .u-section-1 {
+    min-height: 1408px;
+  }
+}
+
+@media (max-width: 767px) {
+   .u-section-1 {
+    min-height: 1125px;
+  }
+}
+
+@media (max-width: 575px) {
+   .u-section-1 {
+    min-height: 696px;
+  }
+}.u-section-2 .u-sheet-1 {
+  min-height: 183px;
+}
+
+.u-section-2 .u-text-1 {
+  font-family: "League Spartan";
+  font-size: 6rem;
+  margin: 0 374px 0 218px;
+}
+
+.u-section-2 .u-text-2 {
+  font-family: "League Spartan";
+  font-size: 1.875rem;
+  margin: -133px 357px 0 auto;
+}
+
+.u-section-2 .u-btn-1 {
+  background-image: none;
+  border-style: solid;
+  margin: 1px 287px 0 auto;
+}
+
+.u-section-2 .u-text-3 {
+  font-family: "League Spartan";
+  margin: 10px 0 14px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-2 .u-text-1 {
+    margin-right: 226px;
+    margin-left: 166px;
+  }
+
+  .u-section-2 .u-text-2 {
+    margin-right: 295px;
+    margin-left: 633px;
+  }
+
+  .u-section-2 .u-btn-1 {
+    margin-right: 87px;
+    margin-left: 633px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-2 .u-text-1 {
+    margin-right: 98px;
+    margin-left: 74px;
+  }
+
+  .u-section-2 .u-text-2 {
+    margin-right: 226px;
+    margin-left: 506px;
+  }
+
+  .u-section-2 .u-btn-1 {
+    margin-right: 0;
+    margin-left: 506px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-2 .u-text-1 {
+    font-size: 5.333333333333333rem;
+    margin-top: 139px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .u-section-2 .u-text-2 {
+    margin-right: 170px;
+    margin-left: 379px;
+    font-size: 1.6666666666666665rem;
+  }
+
+  .u-section-2 .u-btn-1 {
+    margin-left: 379px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-2 .u-text-2 {
+    margin-right: 107px;
+    margin-left: 239px;
+  }
+
+  .u-section-2 .u-btn-1 {
+    margin-left: 239px;
+  }
+} .u-section-3 {
+  min-height: 609px;
+}
+
+.u-section-3 .u-layout-wrap-1 {
+  width: calc(((100% - 1140px) / 2)  + 1123px);
+  margin: 0 auto 0 0;
+}
+
+.u-section-3 .u-image-1 {
+  min-height: 619px;
+  background-image: url("images/bridal-hair.jpg");
+}
+
+.u-section-3 .u-container-layout-1 {
+  padding: 30px 60px;
+}
+
+.u-section-3 .u-layout-cell-2 {
+  min-height: 619px;
+}
+
+.u-section-3 .u-container-layout-2 {
+  padding: 30px 29px;
+}
+
+.u-section-3 .u-text-1 {
+  font-family: "League Spartan";
+  margin: 0 329px 0 1px;
+}
+
+.u-section-3 .u-text-2 {
+  font-family: "League Spartan";
+  margin: -43px 67px 0 263px;
+}
+
+.u-section-3 .u-list-1 {
+  width: 237px;
+  margin: 29px auto 0 0;
+}
+
+.u-section-3 .u-repeater-1 {
+  --gap: 10px;
+  grid-auto-columns: 100%;
+  grid-template-columns: repeat(1, 100%);
+  min-height: 476px;
+}
+
+.u-section-3 .u-container-layout-3 {
+  padding: 5px 10px 10px;
+}
+
+.u-section-3 .u-text-3 {
+  margin: 0 auto 0 0;
+}
+
+.u-section-3 .u-container-layout-4 {
+  padding: 5px 10px 10px;
+}
+
+.u-section-3 .u-text-4 {
+  font-family: Roboto, sans-serif;
+  margin: 0 auto 0 0;
+}
+
+.u-section-3 .u-container-layout-5 {
+  padding: 5px 10px 10px;
+}
+
+.u-section-3 .u-text-5 {
+  font-family: "League Spartan";
+  margin: 0 auto 0 0;
+}
+
+.u-section-3 .u-container-layout-6 {
+  padding: 5px 10px 10px;
+}
+
+.u-section-3 .u-text-6 {
+  font-family: Roboto, sans-serif;
+  margin: 0 auto 0 0;
+}
+
+.u-section-3 .u-container-layout-7 {
+  padding: 5px 10px 10px;
+}
+
+.u-section-3 .u-text-7 {
+  font-family: Roboto, sans-serif;
+  margin: 0 auto 0 0;
+}
+
+.u-section-3 .u-container-layout-8 {
+  padding: 5px 10px 10px;
+}
+
+.u-section-3 .u-text-8 {
+  font-family: Roboto, sans-serif;
+  margin: 0 auto 0 0;
+}
+
+.u-section-3 .u-container-layout-9 {
+  padding: 5px 10px 10px;
+}
+
+.u-section-3 .u-text-9 {
+  font-family: Roboto, sans-serif;
+  margin: 0 auto 0 0;
+}
+
+.u-section-3 .u-container-layout-10 {
+  padding: 5px 10px 10px;
+}
+
+.u-section-3 .u-text-10 {
+  font-family: Roboto, sans-serif;
+  margin: 0 auto 0 0;
+}
+
+.u-section-3 .u-container-layout-11 {
+  padding: 5px 10px 10px;
+}
+
+.u-section-3 .u-text-11 {
+  font-family: Roboto, sans-serif;
+  margin: 0 auto 0 0;
+}
+
+.u-section-3 .u-list-2 {
+  width: 163px;
+  margin: -476px 25px 0 auto;
+}
+
+.u-section-3 .u-repeater-2 {
+  --gap: 10px;
+  grid-auto-columns: 100%;
+  grid-template-columns: repeat(1, 100%);
+  min-height: 476px;
+}
+
+.u-section-3 .u-container-layout-12 {
+  padding: 10px 10px 4px;
+}
+
+.u-section-3 .u-text-12 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: "League Spartan";
+}
+
+.u-section-3 .u-container-layout-13 {
+  padding: 10px 10px 4px;
+}
+
+.u-section-3 .u-text-13 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: "League Spartan";
+}
+
+.u-section-3 .u-container-layout-14 {
+  padding: 10px 10px 4px;
+}
+
+.u-section-3 .u-text-14 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: "League Spartan";
+}
+
+.u-section-3 .u-container-layout-15 {
+  padding: 10px 10px 4px;
+}
+
+.u-section-3 .u-text-15 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: "League Spartan";
+}
+
+.u-section-3 .u-container-layout-16 {
+  padding: 10px 10px 4px;
+}
+
+.u-section-3 .u-text-16 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: "League Spartan";
+}
+
+.u-section-3 .u-container-layout-17 {
+  padding: 10px 10px 4px;
+}
+
+.u-section-3 .u-text-17 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: "League Spartan";
+}
+
+.u-section-3 .u-container-layout-18 {
+  padding: 10px 10px 4px;
+}
+
+.u-section-3 .u-text-18 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: "League Spartan";
+}
+
+.u-section-3 .u-container-layout-19 {
+  padding: 10px 10px 4px;
+}
+
+.u-section-3 .u-text-19 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: "League Spartan";
+}
+
+.u-section-3 .u-container-layout-20 {
+  padding: 10px 10px 4px;
+}
+
+.u-section-3 .u-text-20 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-family: "League Spartan";
+}
+
+@media (max-width: 1199px) {
+   .u-section-3 {
+    min-height: 799px;
+  }
+
+  .u-section-3 .u-layout-wrap-1 {
+    width: calc(((100% - 940px) / 2) + 940px);
+  }
+
+  .u-section-3 .u-image-1 {
+    min-height: 518px;
+  }
+
+  .u-section-3 .u-layout-cell-2 {
+    min-height: 518px;
+  }
+
+  .u-section-3 .u-text-1 {
+    margin-top: 250px;
+    margin-right: 244px;
+    margin-left: 0;
+  }
+
+  .u-section-3 .u-text-2 {
+    margin-top: -44px;
+    margin-right: 32px;
+    margin-left: 193px;
+  }
+
+  .u-section-3 .u-list-1 {
+    margin-top: 30px;
+  }
+
+  .u-section-3 .u-repeater-1 {
+    grid-template-columns: 100%;
+  }
+
+  .u-section-3 .u-repeater-2 {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+   .u-section-3 {
+    min-height: 1184px;
+  }
+
+  .u-section-3 .u-layout-wrap-1 {
+    width: calc(((100% - 720px) / 2) + 720px);
+  }
+
+  .u-section-3 .u-image-1 {
+    min-height: 1141px;
+  }
+
+  .u-section-3 .u-container-layout-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .u-section-3 .u-layout-cell-2 {
+    min-height: 100px;
+  }
+
+  .u-section-3 .u-text-1 {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+   .u-section-3 {
+    min-height: 911px;
+  }
+
+  .u-section-3 .u-layout-wrap-1 {
+    width: calc(((100% - 540px) / 2) + 540px);
+  }
+
+  .u-section-3 .u-image-1 {
+    min-height: 856px;
+  }
+
+  .u-section-3 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-3 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-3 .u-text-1 {
+    margin-right: 102px;
+  }
+
+  .u-section-3 .u-text-2 {
+    margin-right: 0;
+    margin-left: 102px;
+  }
+}
+
+@media (max-width: 575px) {
+   .u-section-3 {
+    min-height: 607px;
+  }
+
+  .u-section-3 .u-layout-wrap-1 {
+    width: calc(((100% - 340px) / 2) + 340px);
+  }
+
+  .u-section-3 .u-image-1 {
+    min-height: 539px;
+  }
+
+  .u-section-3 .u-text-1 {
+    margin-top: -7px;
+    margin-right: 0;
+  }
+
+  .u-section-3 .u-text-2 {
+    margin-top: -30px;
+    margin-left: 0;
+  }
+
+  .u-section-3 .u-list-1 {
+    margin-top: 23px;
+  }
+}.image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0; /* Tidak ada jarak antar gambar */
+	text-align:center;
+}
+.image-row img {
+width: 50%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
