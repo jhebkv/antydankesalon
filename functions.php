@@ -21,7 +21,7 @@ locate_template(array('library/widgets.php'), true);
 locate_template(array('library/seo.php'), true);
 locate_template(array('library/app.php'), true);
 locate_template(array('library/breadcrumbs.php'), true);
-
+locate_template(array('library/theme-wizard/config.php'), true);
 locate_template(array('library/translations/class-theme-multi-languages.php'), true);
 $processors_functions_path = locate_template(['processors/functions.php'], false);
 if ($processors_functions_path !== '') {
@@ -170,8 +170,8 @@ function theme_scripts() {
     }
 
     wp_localize_script('theme-script', 'screenReaderText', array(
-        'expand' => __('expand child menu', 'antydanke'),
-        'collapse' => __('collapse child menu', 'antydanke'),
+        'expand' => __('expand child menu', 'antydankesalon2'),
+        'collapse' => __('collapse child menu', 'antydankesalon2'),
     ));
 }
 add_action('wp_enqueue_scripts', 'theme_scripts', 1002);
@@ -318,9 +318,9 @@ add_action('after_setup_theme', 'theme_content_width');
 
 function theme_widgets_init2() {
     register_sidebar(array(
-        'name'          => __('Primary Widget Area', 'antydanke'),
+        'name'          => __('Primary Widget Area', 'antydankesalon2'),
         'id'            => 'primary',
-        'description'   => __('Add widgets here to appear in your sidebar on blog posts and archive pages.', 'antydanke'),
+        'description'   => __('Add widgets here to appear in your sidebar on blog posts and archive pages.', 'antydankesalon2'),
         'before_widget' => '<widget id="%1$s" name="%1$s" class="widget %2$s">',
         'after_widget'  => '</widget>',
         'after_title'   => '</title>',
@@ -585,7 +585,7 @@ function theme_get_excerpt($args = array()) {
 function _theme_get_excerpt($args = array()) {
 	global $post;
     $count_symbols                = isset($args['count_symbols'])                ? $args['count_symbols']                : false;
-	$more_tag                     = isset($args['more_tag'])                     ? $args['more_tag']                     : __('Read more', 'antydanke');
+	$more_tag                     = isset($args['more_tag'])                     ? $args['more_tag']                     : __('Read more', 'antydankesalon2');
 	$auto                         = isset($args['auto'])                         ? $args['auto']                         : theme_get_option('excerpt_auto');
 	$units_count                  = isset($args['units_count'])                  ? $args['units_count']                  : theme_get_option('excerpt_words');
 
@@ -671,12 +671,12 @@ function theme_get_category_list() {
 	return str_replace(
 		'<a',
 		'<a class="u-textlink"',
-		get_the_category_list(_x(', ', 'Used between list items, there is a space after the comma.', 'antydanke'))
+		get_the_category_list(_x(', ', 'Used between list items, there is a space after the comma.', 'antydankesalon2'))
 	);
 }
 
 function theme_get_tags_list() {
-    return get_the_tag_list('', _x( ', ', 'Used between list items, there is a space after the comma.', 'antydanke'));
+    return get_the_tag_list('', _x( ', ', 'Used between list items, there is a space after the comma.', 'antydankesalon2'));
 }
 
 function theme_print_background_images_styles() {
@@ -1157,9 +1157,9 @@ function getProductButtonHtml ($button_html, $product, $clickTypeProductbutton =
     } else {
         $button_html = str_replace('<a', '<a type="submit" value="' . get_the_ID() . '" name="add-to-cart"', $button_html);
     }
-    $buttonText = sprintf(__('Add to cart', 'antydanke'));
+    $buttonText = sprintf(__('Add to cart', 'antydankesalon2'));
     if ($contentProductbutton !== '') {
-        $buttonText =  sprintf(__($contentProductbutton, 'antydanke'));
+        $buttonText =  sprintf(__($contentProductbutton, 'antydankesalon2'));
     }
     $button_html = str_replace('{AddToCartText}', $buttonText, $button_html);
     return $button_html;
@@ -1261,8 +1261,8 @@ function calcGridAutoRows($params = array()) {
 
 function theme_404_content($args = '') {
     $args = wp_parse_args($args, array(
-        'error_title' => __('Nothing here', 'antydanke'),
-        'error_message' => __('It looks like nothing was found at this location. Maybe try a search?', 'antydanke')
+        'error_title' => __('Nothing here', 'antydankesalon2'),
+        'error_message' => __('It looks like nothing was found at this location. Maybe try a search?', 'antydankesalon2')
     ));
     extract($args);
     echo '<p>' . $args['error_title'] . '</p>'; ?>
@@ -1346,7 +1346,7 @@ function add_recaptcha_script() {
     }
     function dynamicLoadScript() {
         var script = document.createElement('script');
-        script.src = 'https://www.google.com/recaptcha/api.js?render=6LerU1YrAAAAADLgkB2XvpD-WKycMOFjw7KWCw8C';
+        script.src = 'https://www.google.com/recaptcha/api.js?render=6Le2h1YrAAAAAJGoD_hJ0A6yoZXp5_24GH-PaN75';
         script.async = true;
         document.body.appendChild(script);
         script.onload = function() {
@@ -1429,7 +1429,7 @@ function add_recaptcha_script() {
             })(
                 grecaptcha,
                 
-                '6LerU1YrAAAAADLgkB2XvpD-WKycMOFjw7KWCw8C',
+                '6Le2h1YrAAAAAJGoD_hJ0A6yoZXp5_24GH-PaN75',
                 {'contact': 'contact'}
             );
         });
@@ -1865,10 +1865,10 @@ add_action('after_switch_theme', 'force_show_recaptcha_notice_on_theme_activatio
  */
 function blog_sorting() {
     $blog_sorting_options = array(
-        'name_asc'  => __('Name, A to Z', 'antydanke'),
-        'name_desc' => __('Name, Z to A', 'antydanke'),
-        'date_asc'  => __('Date, old to new', 'antydanke'),
-        'date_desc' => __('Date, new to old', 'antydanke'),
+        'name_asc'  => __('Name, A to Z', 'antydankesalon2'),
+        'name_desc' => __('Name, Z to A', 'antydankesalon2'),
+        'date_asc'  => __('Date, old to new', 'antydankesalon2'),
+        'date_desc' => __('Date, new to old', 'antydankesalon2'),
     );
     $sorting = isset($_GET['sorting']) ? sanitize_text_field($_GET['sorting']) : '';
     ob_start();

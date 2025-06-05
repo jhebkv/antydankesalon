@@ -100,7 +100,7 @@ if ($pageBlog || $pagePost || $page404 || $pageLogin || $pageProducts || $pagePr
 <body <?php body_class(); ?><?php body_style_attribute(); ?> <?php body_data_attributes(); ?>>
 <?php if (version_compare( $wp_version, '5.2', '>=' )) { wp_body_open(); } ?>
 <div id="page" class="site">
-    <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'antydanke' ); ?></a>
+    <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'antydankesalon2' ); ?></a>
     <?php if (!$hideHeader) {
         $translations = '';
         if ($language) {
