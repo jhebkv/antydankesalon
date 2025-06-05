@@ -339,9 +339,9 @@ if (! function_exists('get_np_shop_categories_filter_html')) {
         $categories_filter_html = '';
         $categories = np_get_all_categories();
         // add item all
-        $categories_filter_html .= strtr($args['itemTemplate'], array('{categories_filters_content}' => __('All', 'antydanke'), '{categories_filters_value}' => ''));
+        $categories_filter_html .= strtr($args['itemTemplate'], array('{categories_filters_content}' => __('All', 'antydankesalon2'), '{categories_filters_value}' => ''));
         // add item featured
-        $item = strtr($args['itemTemplate'], array('{categories_filters_content}' => __('Featured', 'antydanke'), '{categories_filters_value}' => 'featured'));
+        $item = strtr($args['itemTemplate'], array('{categories_filters_content}' => __('Featured', 'antydankesalon2'), '{categories_filters_value}' => 'featured'));
         $categories_filter_html .= $item;
         // add all categories with hierarchy
         $categories_filter_html .= generate_np_category_options($categories, $args);

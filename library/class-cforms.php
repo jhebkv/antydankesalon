@@ -281,10 +281,10 @@ class CForms {
                 $contact_form = WPCF7_ContactForm::get_template();
                 $form_title = "";
                 if ($template === "footer") {
-                    $form_title = sprintf(__('Form: %s', 'antydanke'), "Footer");
+                    $form_title = sprintf(__('Form: %s', 'antydankesalon2'), "Footer");
                 }
                 if ($template === "header") {
-                    $form_title = sprintf(__('Form: %s', 'antydanke'), "Header");
+                    $form_title = sprintf(__('Form: %s', 'antydankesalon2'), "Header");
                 }
                 if ($template === "custom") {
                     if (is_singular()) {
@@ -293,7 +293,7 @@ class CForms {
                     } else {
                         $id = 'template-' . $i;
                     }
-                    $form_title = sprintf(__('Form: %s', 'antydanke'), "Custom-" . $id);
+                    $form_title = sprintf(__('Form: %s', 'antydankesalon2'), "Custom-" . $id);
                 }
                 if ($count > 1) {
                     $form_title .= ' (' . ($i + 1) . ')';
@@ -320,7 +320,7 @@ class CForms {
                 );
 
                 $actualMail = array(
-                    __('feedback', 'antydanke'),
+                    __('feedback', 'antydankesalon2'),
                     '',
                     '[email]',
                     $fields->hasField('name1') ? '[name1]' : '',

@@ -31,7 +31,7 @@ function theme_breadcrumbs_items($args) {
     $items = array();
 
     if (!is_front_page()) {
-        $items[] = theme_breadcrumbs_link($args, get_home_url(), '', __('Home', 'antydanke'));
+        $items[] = theme_breadcrumbs_link($args, get_home_url(), '', __('Home', 'antydankesalon2'));
     }
 
     if (class_exists('WC_Breadcrumb') && function_exists('is_product_category') && is_product_category() && function_exists('is_product') && !is_product() || function_exists('is_shop') && is_shop()) {
@@ -135,19 +135,19 @@ function theme_breadcrumbs_items($args) {
     }
 
     if (is_tag()) {
-        $items[] = theme_breadcrumbs_text($args, __("Tag: ", 'antydanke') . single_tag_title('', FALSE));
+        $items[] = theme_breadcrumbs_text($args, __("Tag: ", 'antydankesalon2') . single_tag_title('', FALSE));
     }
     if (is_404()) {
-        $items[] = theme_breadcrumbs_text($args, __("404 - Page not Found", 'antydanke'));
+        $items[] = theme_breadcrumbs_text($args, __("404 - Page not Found", 'antydankesalon2'));
     }
     if (is_search()) {
-        $items[] = theme_breadcrumbs_text($args, __("Search", 'antydanke'));
+        $items[] = theme_breadcrumbs_text($args, __("Search", 'antydankesalon2'));
     }
     if (is_year()) {
         $items[] = theme_breadcrumbs_text($args, get_the_time('Y'));
     }
     if (is_author()) {
-        $items[] = theme_breadcrumbs_text($args, sprintf(esc_attr(__('View all posts by %s', 'antydanke')), get_the_author()));
+        $items[] = theme_breadcrumbs_text($args, sprintf(esc_attr(__('View all posts by %s', 'antydankesalon2')), get_the_author()));
     }
 
     if (count($items) == 0) {
