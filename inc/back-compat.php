@@ -28,7 +28,7 @@ add_action('after_switch_theme', 'theme_compat_switch_theme');
  * @global string $wp_version WordPress version.
  */
 function theme_compat_upgrade_notice() {
-    $message = sprintf(__('This theme requires at least WordPress version 4.4. You are running version %s. Please upgrade and try again.', 'antydanke'), $GLOBALS['wp_version']);
+    $message = sprintf(__('This theme requires at least WordPress version 4.4. You are running version %s. Please upgrade and try again.', 'antydankesalon2'), $GLOBALS['wp_version']);
     printf('<div class="error"><p>%s</p></div>', $message);
 }
 
@@ -38,7 +38,7 @@ function theme_compat_upgrade_notice() {
  * @global string $wp_version WordPress version.
  */
 function theme_compat_customize() {
-    wp_die(sprintf(__('This theme requires at least WordPress version 4.4. You are running version %s. Please upgrade and try again.', 'antydanke'), $GLOBALS['wp_version']), '', array(
+    wp_die(sprintf(__('This theme requires at least WordPress version 4.4. You are running version %s. Please upgrade and try again.', 'antydankesalon2'), $GLOBALS['wp_version']), '', array(
         'back_link' => true,
     ));
 }
@@ -51,7 +51,7 @@ add_action('load-customize.php', 'theme_compat_customize');
  */
 function theme_compat_preview() {
     if (isset($_GET['preview'])) {
-        wp_die(sprintf(__('This theme requires at least WordPress version 4.4. You are running version %s. Please upgrade and try again.', 'antydanke'), $GLOBALS['wp_version']));
+        wp_die(sprintf(__('This theme requires at least WordPress version 4.4. You are running version %s. Please upgrade and try again.', 'antydankesalon2'), $GLOBALS['wp_version']));
     }
 }
 add_action('template_redirect', 'theme_compat_preview');

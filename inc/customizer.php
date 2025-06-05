@@ -35,7 +35,7 @@ function theme_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('color_scheme', array(
-        'label' => __('Color Scheme', 'antydanke'),
+        'label' => __('Color Scheme', 'antydankesalon2'),
         'section' => 'colors',
         'type' => 'select',
         'choices' => array(),
@@ -53,7 +53,7 @@ function theme_customize_register($wp_customize) {
             'transport' => 'postMessage',
         ));
         $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, "color_$i", array(
-            'label' => sprintf(__('Color %s', 'antydanke'), $i),
+            'label' => sprintf(__('Color %s', 'antydankesalon2'), $i),
             'section' => 'colors',
         )));
     }
@@ -64,7 +64,7 @@ function theme_customize_register($wp_customize) {
         'transport' => 'postMessage',
     ));
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, "color_white_contrast", array(
-        'label' => __('Text Dark', 'antydanke'),
+        'label' => __('Text Dark', 'antydankesalon2'),
         'section' => 'colors',
     )));
 
@@ -74,7 +74,7 @@ function theme_customize_register($wp_customize) {
         'transport' => 'postMessage',
     ));
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, "color_shading_contrast", array(
-        'label' => __('Text Light', 'antydanke'),
+        'label' => __('Text Light', 'antydankesalon2'),
         'section' => 'colors',
     )));
 
@@ -84,7 +84,7 @@ function theme_customize_register($wp_customize) {
         'transport' => 'postMessage',
     ));
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, "color_background", array(
-        'label' => __('Background', 'antydanke'),
+        'label' => __('Background', 'antydankesalon2'),
         'section' => 'colors',
     )));
 
@@ -110,7 +110,7 @@ function theme_customize_register($wp_customize) {
      */
     $wp_customize->add_section('fonts', array(
         'capability' => 'edit_theme_options',
-        'title' => __('Fonts', 'antydanke'),
+        'title' => __('Fonts', 'antydankesalon2'),
         'priority' => 40,
     ));
 
@@ -121,7 +121,7 @@ function theme_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('font_scheme', array(
-        'label' => __('Font Scheme', 'antydanke'),
+        'label' => __('Font Scheme', 'antydankesalon2'),
         'section' => 'fonts',
         'type' => 'select',
         'choices' => array(),
@@ -145,7 +145,7 @@ function theme_customize_register($wp_customize) {
         'transport' => 'postMessage',
     ));
     $wp_customize->add_control('font_heading', array(
-        'label' => __('Heading Font', 'antydanke'),
+        'label' => __('Heading Font', 'antydankesalon2'),
         'section' => 'fonts',
         'type' => 'select',
         'choices' => array(),
@@ -157,7 +157,7 @@ function theme_customize_register($wp_customize) {
         'transport' => 'postMessage',
     ));
     $wp_customize->add_control('font_text', array(
-        'label' => __('Text Font', 'antydanke'),
+        'label' => __('Text Font', 'antydankesalon2'),
         'section' => 'fonts',
         'type' => 'select',
         'choices' => array(),
@@ -169,7 +169,7 @@ function theme_customize_register($wp_customize) {
      */
     $wp_customize->add_section('typography', array(
         'capability' => 'edit_theme_options',
-        'title' => __('Typography', 'antydanke'),
+        'title' => __('Typography', 'antydankesalon2'),
         'priority' => 40,
     ));
 
@@ -180,7 +180,7 @@ function theme_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_control('typography_scheme', array(
-        'label' => __('Typography Scheme', 'antydanke'),
+        'label' => __('Typography Scheme', 'antydankesalon2'),
         'section' => 'typography',
         'type' => 'select',
         'choices' => array(),
@@ -199,7 +199,7 @@ function theme_customize_register($wp_customize) {
     ));
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'typography_base_size', array(
         'type' => 'number',
-        'label' => __('Base Size', 'antydanke'),
+        'label' => __('Base Size', 'antydankesalon2'),
         'section' => 'typography',
         'input_attrs' => array(
             'min'   => 13,
@@ -216,16 +216,16 @@ function theme_customize_register($wp_customize) {
         'transport' => 'postMessage',
     ));
     $wp_customize->add_control('typography_heading_weight', array(
-        'label' => __('Heading Weight', 'antydanke'),
+        'label' => __('Heading Weight', 'antydankesalon2'),
         'section' => 'typography',
         'type' => 'select',
         'choices' => array(
-            '100' => __('100 Thin', 'antydanke'),
-            '300' => __('300 Light', 'antydanke'),
-            '400' => __('400 Regular', 'antydanke'),
-            '500' => __('500 Medium', 'antydanke'),
-            '700' => __('700 Bold', 'antydanke'),
-            '900' => __('900 Black', 'antydanke'),
+            '100' => __('100 Thin', 'antydankesalon2'),
+            '300' => __('300 Light', 'antydankesalon2'),
+            '400' => __('400 Regular', 'antydankesalon2'),
+            '500' => __('500 Medium', 'antydankesalon2'),
+            '700' => __('700 Bold', 'antydankesalon2'),
+            '900' => __('900 Black', 'antydankesalon2'),
         ),
     ));
 
@@ -240,7 +240,7 @@ function theme_customize_register($wp_customize) {
     ));
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'logo_width', array(
         'type' => 'number',
-        'label' => __('Logo max width (px)', 'antydanke'),
+        'label' => __('Logo max width (px)', 'antydankesalon2'),
         'section' => 'title_tagline',
         'priority' => 9,
     )));
@@ -252,7 +252,7 @@ function theme_customize_register($wp_customize) {
     ));
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'logo_height', array(
         'type' => 'number',
-        'label' => __('Logo max height (px)', 'antydanke'),
+        'label' => __('Logo max height (px)', 'antydankesalon2'),
         'section' => 'title_tagline',
         'priority' => 9,
     )));
@@ -264,7 +264,7 @@ function theme_customize_register($wp_customize) {
     ));
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'logo_link', array(
         'type' => 'url',
-        'label' => __('Logo link href', 'antydanke'),
+        'label' => __('Logo link href', 'antydankesalon2'),
         'section' => 'title_tagline',
         'priority' => 9,
     )));
@@ -276,19 +276,19 @@ function theme_customize_register($wp_customize) {
         'sanitize_callback' => 'theme_sanitize_raw'
     ));
     $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'custom_favicon', array(
-        'label' => __('Favicon', 'antydanke'),
+        'label' => __('Favicon', 'antydankesalon2'),
         'section' => 'title_tagline',
         'priority' => 8,
         'height' => '64',
         'width' => '64',
         'button_labels' => array(
-            'select' => __('Select favicon', 'antydanke'),
-            'change' => __('Change favicon', 'antydanke'),
-            'remove' => __('Remove', 'antydanke'),
-            'default' => __('Default', 'antydanke'),
-            'placeholder' => __('No favicon selected', 'antydanke'),
-            'frame_title' => __('Select favicon', 'antydanke'),
-            'frame_button' => __('Choose favicon', 'antydanke'),
+            'select' => __('Select favicon', 'antydankesalon2'),
+            'change' => __('Change favicon', 'antydankesalon2'),
+            'remove' => __('Remove', 'antydankesalon2'),
+            'default' => __('Default', 'antydankesalon2'),
+            'placeholder' => __('No favicon selected', 'antydankesalon2'),
+            'frame_title' => __('Select favicon', 'antydankesalon2'),
+            'frame_button' => __('Choose favicon', 'antydankesalon2'),
         ),
     )));
 
@@ -298,7 +298,7 @@ function theme_customize_register($wp_customize) {
      */
     $wp_customize->add_section('menu_options', array(
         'capability' => 'edit_theme_options',
-        'title' => __('Theme options', 'antydanke'),
+        'title' => __('Theme options', 'antydankesalon2'),
         'panel' => 'nav_menus',
     ));
 
@@ -310,7 +310,7 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control('menu_trim_title', array(
         'type' => 'checkbox',
         'section' => 'menu_options',
-        'label' => __('Trim long menu items', 'antydanke'),
+        'label' => __('Trim long menu items', 'antydankesalon2'),
     ));
 
     $wp_customize->add_setting('menu_trim_len', array(
@@ -321,7 +321,7 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control('menu_trim_len', array(
         'type' => 'number',
         'section' => 'menu_options',
-        'label' => __('Limit each item to [N] characters', 'antydanke'),
+        'label' => __('Limit each item to [N] characters', 'antydankesalon2'),
     ));
 
     $wp_customize->add_setting('submenu_trim_len', array(
@@ -332,7 +332,7 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control('submenu_trim_len', array(
         'type' => 'number',
         'section' => 'menu_options',
-        'label' => __('Limit each subitem to [N] characters', 'antydanke'),
+        'label' => __('Limit each subitem to [N] characters', 'antydankesalon2'),
     ));
 
     $wp_customize->add_setting('menu_use_tag_filter', array(
@@ -343,7 +343,7 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control('menu_use_tag_filter', array(
         'type' => 'checkbox',
         'section' => 'menu_options',
-        'label' => __('Apply menu item tag filter', 'antydanke'),
+        'label' => __('Apply menu item tag filter', 'antydankesalon2'),
     ));
 
     $wp_customize->add_setting('menu_allowed_tags', array(
@@ -354,7 +354,7 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control('menu_allowed_tags', array(
         'type' => 'text',
         'section' => 'menu_options',
-        'label' => __('Allowed menu item tags', 'antydanke'),
+        'label' => __('Allowed menu item tags', 'antydankesalon2'),
     ));
 
     $wp_customize->add_setting('use_default_menu', array(
@@ -365,8 +365,8 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control('use_default_menu', array(
         'type' => 'checkbox',
         'section' => 'menu_options',
-        'label' => __('Use not stylized menu', 'antydanke'),
-        'description' => __('Used standart wp_nav_menu when option is enabled (need for some third-party plugins).', 'antydanke'),
+        'label' => __('Use not stylized menu', 'antydankesalon2'),
+        'description' => __('Used standart wp_nav_menu when option is enabled (need for some third-party plugins).', 'antydankesalon2'),
     ));
 
 
@@ -375,7 +375,7 @@ function theme_customize_register($wp_customize) {
      */
     $wp_customize->add_section('excerpt_options', array(
         'capability' => 'edit_theme_options',
-        'title' => __('Excerpt', 'antydanke'),
+        'title' => __('Excerpt', 'antydankesalon2'),
     ));
 
     $wp_customize->add_setting('excerpt_auto', array(
@@ -386,8 +386,8 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control('excerpt_auto', array(
         'type' => 'checkbox',
         'section' => 'excerpt_options',
-        'label' => __('Use auto excerpts', 'antydanke'),
-        'description' => __('Generate post excerpts automatically (When neither more-tag nor post excerpt is used)', 'antydanke'),
+        'label' => __('Use auto excerpts', 'antydankesalon2'),
+        'description' => __('Generate post excerpts automatically (When neither more-tag nor post excerpt is used)', 'antydankesalon2'),
     ));
 
     $wp_customize->add_setting('excerpt_words', array(
@@ -398,7 +398,7 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control('excerpt_words', array(
         'type' => 'number',
         'section' => 'excerpt_options',
-        'label' => __('Excerpt length (words)', 'antydanke'),
+        'label' => __('Excerpt length (words)', 'antydankesalon2'),
     ));
 
     $wp_customize->add_setting('excerpt_min_remainder', array(
@@ -409,7 +409,7 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control('excerpt_min_remainder', array(
         'type' => 'number',
         'section' => 'excerpt_options',
-        'label' => __('Excerpt balance (words)', 'antydanke'),
+        'label' => __('Excerpt balance (words)', 'antydankesalon2'),
     ));
 
     $wp_customize->add_setting('excerpt_strip_shortcodes', array(
@@ -420,7 +420,7 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control('excerpt_strip_shortcodes', array(
         'type' => 'checkbox',
         'section' => 'excerpt_options',
-        'label' => __('Remove shortcodes from excerpt', 'antydanke'),
+        'label' => __('Remove shortcodes from excerpt', 'antydankesalon2'),
     ));
 
     $wp_customize->add_setting('excerpt_use_tag_filter', array(
@@ -431,7 +431,7 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control('excerpt_use_tag_filter', array(
         'type' => 'checkbox',
         'section' => 'excerpt_options',
-        'label' => __('Apply excerpt tag filter', 'antydanke'),
+        'label' => __('Apply excerpt tag filter', 'antydankesalon2'),
     ));
 
     $wp_customize->add_setting('excerpt_allowed_tags', array(
@@ -442,7 +442,7 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control('excerpt_allowed_tags', array(
         'type' => 'text',
         'section' => 'excerpt_options',
-        'label' => __('Allowed excerpt tags', 'antydanke'),
+        'label' => __('Allowed excerpt tags', 'antydankesalon2'),
     ));
 
     $wp_customize->add_setting('show_morelink', array(
@@ -453,7 +453,7 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control('show_morelink', array(
         'type' => 'checkbox',
         'section' => 'excerpt_options',
-        'label' => __('Show More Link', 'antydanke'),
+        'label' => __('Show More Link', 'antydankesalon2'),
     ));
 
     $wp_customize->add_setting('morelink_template', array(
@@ -464,8 +464,8 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control('morelink_template', array(
         'type' => 'text',
         'section' => 'excerpt_options',
-        'label' => __('More Link Template', 'antydanke'),
-        'description' => sprintf(__('ShortTags: %s', 'antydanke'), '[url], [text]'),
+        'label' => __('More Link Template', 'antydankesalon2'),
+        'description' => sprintf(__('ShortTags: %s', 'antydankesalon2'), '[url], [text]'),
     ));
 
 
@@ -474,7 +474,7 @@ function theme_customize_register($wp_customize) {
      */
     $wp_customize->add_section('seo_options', array(
         'capability' => 'edit_theme_options',
-        'title' => __('SEO', 'antydanke'),
+        'title' => __('SEO', 'antydankesalon2'),
         'priority' => 200,
     ));
 
@@ -486,7 +486,7 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control('seo_og', array(
         'type' => 'checkbox',
         'section' => 'seo_options',
-        'label' => __('Include Open Graph meta tags', 'antydanke'),
+        'label' => __('Include Open Graph meta tags', 'antydankesalon2'),
     ));
 
     $wp_customize->add_setting('seo_ld', array(
@@ -497,7 +497,7 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control('seo_ld', array(
         'type' => 'checkbox',
         'section' => 'seo_options',
-        'label' => __('Include schema.org JSON-LD syntax markup', 'antydanke'),
+        'label' => __('Include schema.org JSON-LD syntax markup', 'antydankesalon2'),
     ));
 
     /**
@@ -505,7 +505,7 @@ function theme_customize_register($wp_customize) {
      */
     $wp_customize->add_section('templates_options', array(
         'capability' => 'edit_theme_options',
-        'title' => __('Templates', 'antydanke'),
+        'title' => __('Templates', 'antydankesalon2'),
         'priority' => 200,
     ));
 
@@ -531,7 +531,7 @@ function theme_customize_register($wp_customize) {
                             if (!isset($templatesOptions[$templateKey])) {
                                 $templatesOptions[$templateKey] = array();
                             }
-                            $templatesOptions[$templateKey][$key] = __($option, 'antydanke');
+                            $templatesOptions[$templateKey][$key] = __($option, 'antydankesalon2');
                         }
                     }
                 }
@@ -546,7 +546,7 @@ function theme_customize_register($wp_customize) {
                     'type'        => 'select',
                     'choices'     => $templatesOptions[ $templateKey ],
                     'section'     => 'templates_options',
-                    'label'       => __( $templateLabel, 'antydanke' ),
+                    'label'       => __( $templateLabel, 'antydankesalon2' ),
                     'description' => '',
                 ) );
             }
@@ -562,7 +562,7 @@ function theme_customize_register($wp_customize) {
         if (isset ($data['products']) && $data['products']) {
             $wp_customize->add_section('products_options', array(
                 'capability' => 'edit_theme_options',
-                'title' => __('E-Commerce Templates', 'antydanke'),
+                'title' => __('E-Commerce Templates', 'antydankesalon2'),
                 'priority' => 200,
             ));
             $wp_customize->add_setting('links_title', array(
@@ -572,11 +572,11 @@ function theme_customize_register($wp_customize) {
             $wp_customize->add_control('links_title', array(
                 'type' => 'text',
                 'section' => 'products_options',
-                'label' => __('Theme With E-Commerce Templates', 'antydanke'),
+                'label' => __('Theme With E-Commerce Templates', 'antydankesalon2'),
                 'description' => __('The installed Theme contains the E-Commerce Page Templates, which display Products on your website.
 </br></br>You have installed the Theme without the Editor Plugin. Therefore, the Menu Product Items still need to be created.
 </br></br>Please add the links to your E-Commerce Store pages manually.
-</br></br>Please copy the following links and paste them into your CMS Menu Item.', 'antydanke'),
+</br></br>Please copy the following links and paste them into your CMS Menu Item.', 'antydankesalon2'),
             ));
             $wp_customize->add_setting('products_info', array(
                 'sanitize_callback' => 'sanitize_text_field',
@@ -585,7 +585,7 @@ function theme_customize_register($wp_customize) {
             $wp_customize->add_control('products_info', array(
                 'type' => 'text',
                 'section' => 'products_options',
-                'label' => __('Product List Page Template:', 'antydanke'),
+                'label' => __('Product List Page Template:', 'antydankesalon2'),
                 'description' => home_url('?products-list'),
             ));
             $wp_customize->add_setting('product_info', array(
@@ -595,7 +595,7 @@ function theme_customize_register($wp_customize) {
             $wp_customize->add_control('product_info', array(
                 'type' => 'text',
                 'section' => 'products_options',
-                'label' => __('Product Details Page Template:', 'antydanke'),
+                'label' => __('Product Details Page Template:', 'antydankesalon2'),
                 'description' => home_url('?product-id=1'),
             ));
         }
@@ -606,7 +606,7 @@ function theme_customize_register($wp_customize) {
      */
     $wp_customize->add_section('other_options', array(
         'capability' => 'edit_theme_options',
-        'title' => __('Other settings', 'antydanke'),
+        'title' => __('Other settings', 'antydankesalon2'),
         'priority' => 200,
     ));
 
@@ -618,7 +618,7 @@ function theme_customize_register($wp_customize) {
     $wp_customize->add_control('include_jquery', array(
         'type' => 'checkbox',
         'section' => 'other_options',
-        'label' => __('Use jQuery from theme', 'antydanke'),
+        'label' => __('Use jQuery from theme', 'antydankesalon2'),
     ));
 
     /**
@@ -626,15 +626,15 @@ function theme_customize_register($wp_customize) {
      */
     $wp_customize->add_section('sidebar_options', array(
         'capability' => 'edit_theme_options',
-        'title' => __('Sidebars', 'antydanke'),
+        'title' => __('Sidebars', 'antydankesalon2'),
         'priority' => 100,
     ));
 
     $layouts_choices = array(
-        '' => __('Default', 'antydanke'),
-        'left-sidebar' => __('Left', 'antydanke'),
-        'right-sidebar' => __('Right', 'antydanke'),
-        'none' => __('None', 'antydanke'),
+        '' => __('Default', 'antydankesalon2'),
+        'left-sidebar' => __('Left', 'antydankesalon2'),
+        'right-sidebar' => __('Right', 'antydankesalon2'),
+        'none' => __('None', 'antydankesalon2'),
     );
 
     $wp_customize->add_setting('sidebars_layout_blog', array(
@@ -646,8 +646,8 @@ function theme_customize_register($wp_customize) {
         'type' => 'select',
         'choices' => $layouts_choices,
         'section' => 'sidebar_options',
-        'label' => __('Blog Template', 'antydanke'),
-        'description' => __('Templates for displaying blogs, archives, search results', 'antydanke'),
+        'label' => __('Blog Template', 'antydankesalon2'),
+        'description' => __('Templates for displaying blogs, archives, search results', 'antydankesalon2'),
     ));
 
     $wp_customize->add_setting('sidebars_layout_post', array(
@@ -659,8 +659,8 @@ function theme_customize_register($wp_customize) {
         'type' => 'select',
         'choices' => $layouts_choices,
         'section' => 'sidebar_options',
-        'label' => __('Post Template', 'antydanke'),
-        'description' => __('Templates for displaying single posts', 'antydanke'),
+        'label' => __('Post Template', 'antydankesalon2'),
+        'description' => __('Templates for displaying single posts', 'antydankesalon2'),
     ));
 
     $wp_customize->add_setting('sidebars_layout_default', array(
@@ -672,14 +672,14 @@ function theme_customize_register($wp_customize) {
         'type' => 'select',
         'choices' => $layouts_choices,
         'section' => 'sidebar_options',
-        'label' => __('Default Template', 'antydanke'),
-        'description' => __('Templates for displaying single pages and everything else', 'antydanke'),
+        'label' => __('Default Template', 'antydankesalon2'),
+        'description' => __('Templates for displaying single pages and everything else', 'antydankesalon2'),
     ));
 }
 add_action('customize_register', 'theme_customize_register', 11);
 
 function theme_print_sidebars_blog_caption() {
-    printf('<h3>%s</h3>', __('Display sidebars on:', 'antydanke'));
+    printf('<h3>%s</h3>', __('Display sidebars on:', 'antydankesalon2'));
 }
 add_action('customize_render_control_sidebars_layout_blog', 'theme_print_sidebars_blog_caption');
 
