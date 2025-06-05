@@ -21,7 +21,7 @@ locate_template(array('library/widgets.php'), true);
 locate_template(array('library/seo.php'), true);
 locate_template(array('library/app.php'), true);
 locate_template(array('library/breadcrumbs.php'), true);
-locate_template(array('library/theme-wizard/config.php'), true);
+
 locate_template(array('library/translations/class-theme-multi-languages.php'), true);
 $processors_functions_path = locate_template(['processors/functions.php'], false);
 if ($processors_functions_path !== '') {
@@ -1340,7 +1340,100 @@ function add_recaptcha_script() {
     $pluginSiteSettings = get_plugin_site_settings();
     if ($hasFormsInTemplate && (!$hasPlugin || ($hasPlugin && empty($pluginSiteSettings->captchaScript)))) {
         ob_start(); ?>
-        
+        <script>
+    function gdprConfirmed() {
+        return true;
+    }
+    function dynamicLoadScript() {
+        var script = document.createElement('script');
+        script.src = 'https://www.google.com/recaptcha/api.js?render=6LerU1YrAAAAADLgkB2XvpD-WKycMOFjw7KWCw8C';
+        script.async = true;
+        document.body.appendChild(script);
+        script.onload = function() {
+            let event = new CustomEvent("recaptchaLoaded");
+            document.dispatchEvent(event);
+        };
+    }
+    function showRecaptchaError(error) {
+        error = error || '';
+        var formError = document.querySelector('.u-form-send-error');
+
+        if (formError) {
+            formError.innerText = 'Site Owner Error: ' + error.replace(/:[\s\S]*/, '');
+            formError.style.display = 'block';
+        }
+
+        console.error('Error in grecaptcha: ', error);
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+        var confirmButton = document.querySelector('.u-cookies-consent .u-button-confirm');
+        if (confirmButton) {
+            confirmButton.onclick = dynamicLoadScript;
+        }
+    });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            if (!gdprConfirmed()) {
+                return;
+            }
+            dynamicLoadScript();
+        });
+    </script>
+    <script>
+        document.addEventListener("recaptchaLoaded", function() {
+            if (!gdprConfirmed()) {
+                return;
+            }
+
+            (function (grecaptcha, sitekey, actions) {
+                var recaptcha = {
+                    execute: function (action, submitFormCb) {
+                        if (typeof grecaptcha === 'undefined' || typeof grecaptcha.execute !== 'function') {
+                            showRecaptchaError('reCAPTCHA script failed to load.');
+                            return;
+                        }
+
+                        grecaptcha.execute(sitekey, {action: action}).then((token) => {
+                            if (!token) {
+                                throw new Error('Empty token received from reCAPTCHA');
+                            }
+
+                            var forms = document.getElementsByTagName('form');
+
+                            for (var i = 0; i < forms.length; i++) {
+                                var response = forms[i].querySelector('[name="recaptchaResponse"]');
+
+                                if (!response) {
+                                    response = document.createElement('input');
+                                    response.setAttribute('type', 'hidden');
+                                    response.setAttribute('name', 'recaptchaResponse');
+                                    forms[i].appendChild(response);
+                                }
+
+                                response.value = token;
+                            }
+
+                            submitFormCb();
+                        }).catch((e) => {
+                            showRecaptchaError(e.message);
+                        });
+                    },
+
+                    executeContact: function (submitFormCb) {
+                        recaptcha.execute(actions['contact'], submitFormCb);
+                    }
+                };
+
+                window.recaptchaObject = recaptcha;
+            })(
+                grecaptcha,
+                
+                '6LerU1YrAAAAADLgkB2XvpD-WKycMOFjw7KWCw8C',
+                {'contact': 'contact'}
+            );
+        });
+    </script>
         <?php $recaptcha_script = trim(ob_get_clean());
         if ($recaptcha_script) {
             echo $recaptcha_script;
