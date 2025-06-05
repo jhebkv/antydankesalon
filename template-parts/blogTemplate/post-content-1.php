@@ -20,7 +20,7 @@ $all = count($wp_query->posts); echo getGridAutoRowsStyles($blogJson, $all);
                             $post_image = theme_get_post_image(array('class' => 'u-blog-control u-expanded-width u-image u-image-default u-image-1', 'default' => '/images/0fd3416c.jpeg'));
                             if ($post_image) echo $post_image; else { echo '<div class="none-post-image" style="display: none;"></div>'; $skip_min_height = true; } ?><!--/blog_post_image--><!--blog_post_content-->
           <div class="u-blog-control u-post-content u-text u-text-2"><?php echo !is_search() && (is_singular() || $post->post_type !== 'post') ? theme_get_content() : theme_get_excerpt(); ?></div><!--/blog_post_content--><!--blog_post_readmore-->
-          <a href="<?php the_permalink(); ?>" class="u-blog-control u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-none u-btn-1"><!--blog_post_readmore_content--><!--options_json--><!--{"content":"","defaultValue":"Read More"}--><!--/options_json--><?php _e(sprintf(__('Read More', 'antydanke'))); ?><!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
+          <a href="<?php the_permalink(); ?>" class="u-blog-control u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-none u-btn-1"><!--blog_post_readmore_content--><!--options_json--><!--{"content":"","defaultValue":"Read More"}--><!--/options_json--><?php _e(sprintf(__('Read More', 'antydankesalon2'))); ?><!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
         </div>
       </div><!--/blog_post--><?php } ?><?php if ($templateOrder == 1) { ?><!--blog_post-->
       <?php $postItemInvisible = !has_post_thumbnail() ? true : false; ?><div class="u-blog-post u-container-style u-repeater-item u-video-cover u-white">
@@ -32,7 +32,7 @@ $all = count($wp_query->posts); echo getGridAutoRowsStyles($blogJson, $all);
                             $post_image = theme_get_post_image(array('class' => 'u-blog-control u-expanded-width u-image u-image-default u-image-2', 'default' => '/images/68f64b9d.jpeg'));
                             if ($post_image) echo $post_image; else { echo '<div class="none-post-image" style="display: none;"></div>'; $skip_min_height = true; } ?><!--/blog_post_image--><!--blog_post_content-->
           <div class="u-blog-control u-post-content u-text u-text-4"><?php echo !is_search() && (is_singular() || $post->post_type !== 'post') ? theme_get_content() : theme_get_excerpt(); ?></div><!--/blog_post_content--><!--blog_post_readmore-->
-          <a href="<?php the_permalink(); ?>" class="u-blog-control u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-none u-btn-2"><!--blog_post_readmore_content--><!--options_json--><!--{"content":"","defaultValue":"Read More"}--><!--/options_json--><?php _e(sprintf(__('Read More', 'antydanke'))); ?><!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
+          <a href="<?php the_permalink(); ?>" class="u-blog-control u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-none u-btn-2"><!--blog_post_readmore_content--><!--options_json--><!--{"content":"","defaultValue":"Read More"}--><!--/options_json--><?php _e(sprintf(__('Read More', 'antydankesalon2'))); ?><!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
         </div>
       </div><!--/blog_post--><?php } ?><?php if ($templateOrder == 2) { ?><!--blog_post-->
       <?php $postItemInvisible = !has_post_thumbnail() ? true : false; ?><div class="u-blog-post u-container-style u-repeater-item u-video-cover u-white">
@@ -44,7 +44,7 @@ $all = count($wp_query->posts); echo getGridAutoRowsStyles($blogJson, $all);
                             $post_image = theme_get_post_image(array('class' => 'u-blog-control u-expanded-width u-image u-image-default u-image-3', 'default' => '/images/8ad73f3c.jpeg'));
                             if ($post_image) echo $post_image; else { echo '<div class="none-post-image" style="display: none;"></div>'; $skip_min_height = true; } ?><!--/blog_post_image--><!--blog_post_content-->
           <div class="u-blog-control u-post-content u-text u-text-6"><?php echo !is_search() && (is_singular() || $post->post_type !== 'post') ? theme_get_content() : theme_get_excerpt(); ?></div><!--/blog_post_content--><!--blog_post_readmore-->
-          <a href="<?php the_permalink(); ?>" class="u-blog-control u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-none u-btn-3"><!--blog_post_readmore_content--><!--options_json--><!--{"content":"","defaultValue":"Read More"}--><!--/options_json--><?php _e(sprintf(__('Read More', 'antydanke'))); ?><!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
+          <a href="<?php the_permalink(); ?>" class="u-blog-control u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-none u-btn-3"><!--blog_post_readmore_content--><!--options_json--><!--{"content":"","defaultValue":"Read More"}--><!--/options_json--><?php _e(sprintf(__('Read More', 'antydankesalon2'))); ?><!--/blog_post_readmore_content--></a><!--/blog_post_readmore-->
         </div>
       </div><!--/blog_post--><?php } ?><?php } ?>
     </div>
